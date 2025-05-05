@@ -1,0 +1,198 @@
+<!-- booking-form.html -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="output.css" rel="stylesheet" />
+        <title>Shujia | Booking Form</title>
+    </head>
+    <body>
+        <main class="relative mx-auto min-h-screen w-full max-w-[640px] bg-[#F4F5F7]">
+            <div id="Background" class="absolute left-0 right-0 top-0">
+                <img src="assets/images/backgrounds/booking-Form-Rectangle.png" alt="image" class="h-[350px] w-full object-cover object-bottom" />
+            </div>
+
+            <!-- Awal NavTop -->
+            <section id="NavTop" class="fixed left-0 right-0 top-[16px] z-30 transition-all duration-300">
+                <div class="mx-auto max-w-[640px] px-5">
+                    <div id="ContainerNav" class="relative flex h-[68px] items-center justify-center transition-all duration-300">
+                        <a id="BackA" href="my-cart.html" class="absolute left-0 transition-all duration-300">
+                            <div id="Back" class="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full bg-white">
+                                <img src="assets/images/icons/left.svg" alt="icon" class="h-[22px] w-[22px]" />
+                            </div>
+                        </a>
+                        <h2 id="Title" class="font-semibold text-white transition-all duration-300">Booking Services</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- Akhir NavTop -->
+
+            <!-- Awal ProgressBar -->
+            <section id="ProgressBar" class="relative px-5 pt-[92px]">
+                <div class="flex">
+                    <div id="Step1" class="flex flex-col items-center">
+                        <div class="relative z-10 flex h-[25px] items-center">
+                            <div class="line-finished h-2 w-[60px] rounded-full bg-white"></div>
+                            <div class="bullet-1 absolute right-0 top-0 translate-x-1/2">
+                                <div class="flex flex-col items-center gap-[6px]">
+                                    <div class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-white text-xs font-bold leading-[18px]">1</div>
+                                    <p class="text-xs font-semibold leading-[18px] text-white">Booking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Step2" class="relative flex h-[25px] w-full items-center">
+                        <div class="line-not-finished h-2 w-full rounded-full bg-[#E68B6D]"></div>
+                        <div class="bullet-2 absolute right-1/2 top-0 translate-x-1/2">
+                            <div class="flex flex-col items-center gap-[6px]">
+                                <div class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#FFBFA9] text-xs font-bold leading-[18px] text-[#C2836D]">2</div>
+                                <p class="text-xs font-semibold leading-[18px] text-[#FFBFA9]">Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Step3" class="relative z-10 flex h-[25px] w-[60px] items-center">
+                        <div class="line-not-finished h-2 w-[60px] rounded-full bg-[#E68B6D]"></div>
+                        <div class="bullet-3 absolute left-0 top-0 -translate-x-1/2">
+                            <div class="flex flex-col items-center gap-[6px]">
+                                <div class="flex h-[25px] w-[25px] items-center justify-center rounded-full bg-[#FFBFA9] text-xs font-bold leading-[18px] text-[#C2836D]">3</div>
+                                <p class="text-xs font-semibold leading-[18px] text-[#FFBFA9]">Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- AKhir ProgressBar -->
+
+            <div class="relative mt-[44px] flex flex-col px-5 pb-5">
+                <form action="payment.html">
+                    <!-- Awal Header -->
+                    <header class="flex flex-col gap-[2px]">
+                        <h1 class="text-[26px] font-extrabold leading-[39px] text-white">Start Booking</h1>
+                        <p class="text-white">Feel free to make a reservation.</p>
+                    </header>
+                    <!-- Akhir Header -->
+
+                    <div class="mt-[20px] flex flex-col gap-5">
+                        <!-- Awal Working Schedule -->
+                        <section id="WorkingSchedule" class="flex flex-col gap-4 rounded-3xl border border-shujia-graylight bg-white px-[14px] py-[14px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">Working Schedule</h3>
+                                <button type="button" data-expand="WorkingScheduleJ" class="shrink-0">
+                                    <img src="assets/images/icons/dropdown.svg" alt="icon" class="h-[32px] w-[32px] transition-all duration-300" />
+                                </button>
+                            </div>
+                            <div id="WorkingScheduleJ" class="flex flex-col gap-4">
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Date</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight">
+                                        <img src="assets/images/icons/calender.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <input required readonly type="text" value="17 October 2024" class="h-full w-full rounded-full bg-[#F4F5F7] pl-[50px] font-semibold focus:outline-none" />
+                                    </div>
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Start Time At</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/clock.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <select name="" id="" class="relative z-10 h-full w-full appearance-none rounded-full bg-transparent pl-[50px] font-semibold focus:outline-none">
+                                            <option value="" disabled selected>Enter the time</option>
+                                            <option value="09:00">09:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="11:00">11:00</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                        </section>
+                        <!-- Akhir Working Schedule -->
+
+                        <!-- Awal Personal Information -->
+                        <section id="PersonalInformations" class="flex flex-col gap-4 rounded-3xl border border-shujia-graylight bg-white px-[14px] py-[14px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">Personal Informations</h3>
+                                <button type="button" data-expand="PersonalInformationsJ" class="shrink-0">
+                                    <img src="assets/images/icons/dropdown.svg" alt="icon" class="h-[32px] w-[32px] transition-all duration-300" />
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4" id="PersonalInformationsJ">
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Full Name</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/profile.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <input required class="h-full w-full rounded-full pl-[50px] font-semibold leading-6 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none" placeholder="Write your complete name" type="text" />
+                                    </div>
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Email Address</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/email.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <input type="email" placeholder="Write your email" required class="h-full w-full rounded-full pl-[50px] font-semibold leading-6 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none" />
+                                    </div>
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">No. Phone</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/phone.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <input type="tel" placeholder="Write your active number" required class="h-full w-full rounded-full pl-[50px] font-semibold leading-6 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none" />
+                                    </div>
+                                </label>
+                            </div>
+                        </section>
+                        <!-- AKhir Personal Information -->
+
+                        <!-- Awal Your Home Address -->
+                        <!-- booking-form.html -->
+
+                        <section id="YourHomeAddress" class="flex flex-col gap-4 rounded-3xl border border-shujia-graylight bg-white px-[14px] py-[14px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">Your Home Address</h3>
+                                <button type="button" data-expand="YourHomeAddressJ" class="shrink-0">
+                                    <img src="assets/images/icons/dropdown.svg" alt="icon" class="h-[32px] w-[32px] transition-all duration-300" />
+                                </button>
+                            </div>
+                            <div id="YourHomeAddressJ" class="flex flex-col gap-4">
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Address</h4>
+                                    <div class="relative h-[110px] w-full overflow-hidden rounded-[22px] border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <textarea placeholder="Enter your complete address" required class="h-full w-full pl-[50px] pr-[14px] pt-[14px] font-semibold leading-7 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none" name="" id=""></textarea>
+                                        <img src="assets/images/icons/address.svg" alt="icon" class="absolute left-[14px] top-[14px] h-6 w-6 shrink-0" />
+                                    </div>
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">City</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/location.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <select name="" id="" class="relative z-10 h-full w-full appearance-none rounded-full bg-transparent pl-[50px] font-semibold focus:outline-none">
+                                            <option value="" disabled selected>Enter the city name</option>
+                                            <option value="Buitenzorg">Buitenzorg</option>
+                                            <option value="Surabaya">Surabaya</option>
+                                            <option value="Jakarta">Jakarta</option>
+                                        </select>
+                                        <img src="assets/images/icons/select.svg" alt="icon" class="absolute right-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                    </div>
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    <h4 class="font-semibold">Post Code</h4>
+                                    <div class="relative h-[52px] w-full overflow-hidden rounded-full border border-shujia-graylight transition-all duration-300 focus-within:border-shujia-orange">
+                                        <img src="assets/images/icons/postal-code.svg" alt="icon" class="absolute left-[14px] top-1/2 h-6 w-6 shrink-0 -translate-y-1/2" />
+                                        <input required class="post-code h-full w-full rounded-full pl-[50px] font-semibold leading-6 placeholder:text-[16px] placeholder:font-normal placeholder:text-shujia-gray focus:outline-none" placeholder="What’s your postal code" type="tel" />
+                                    </div>
+                                </label>
+                            </div>
+                        </section>
+                        <!-- AKhir Your Home Address -->
+                    </div>
+                    <button id="ContinueToPayment" type="submit" class="mt-[44px] w-full rounded-full bg-shujia-orange py-[14px] font-semibold text-white transition-all duration-300 hover:shadow-[0px_4px_10px_0px_#D04B1E80]">Continue to Payment</button>
+                </form>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/global-nav2.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/booking-form.js"></script>
+    </body>
+</html>
